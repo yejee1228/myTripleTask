@@ -1,70 +1,34 @@
-# Getting Started with Create React App
+# 트리플 프론트엔드에 지원한 김예지입니다.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+2022년 6월 17일 부터 6월 24일 자정까지 진행된 프론트엔드 과제입니다.
 
-## Available Scripts
+## Run
 
-In the project directory, you can run:
+node.js v16.12.0\
+yarn v1.21.1\
+\
+`yarn install` 명령어로 node-modules를 설치합니다.
+`yarn start` 명령어로 실행합니다.
 
-### `npm start`
+## Skill
+### `react`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### `redux`
+전역적인 상태관리 및 유지보수 시에 변할 수 있는 값을 모아두기 위해 사용하였습니다.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+### `styled-component`
+클래스명이 중복되지 않기 위해 사용하였으며, 중복이 적은 컴포넌트에 정의하였습니다.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+### `CSS-Module`
+클래스명이 중복되지 않게 하기 위해 사용하였으며, 전역적으로 사용할만한 태그의 스타일을 정의하기 위해 사용하였습니다.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## After Task
+리액트에 대해 아직 공부하는 중이라 쉽지는 않았지만, 짬내어 과제하는 내내 재미있었습니다.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+세 컴포넌트의 값이 동시에 멈추는 카운트업 부분이 잘 되지 않았으나, 비슷하게 구현하려 노력하였습니다.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+이외 문구, 레이아웃, 스타일은 트리플 홈페이지를 참조하였고, titicacadev/eslint-config-triple을 적용하였습니다.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+감사합니다.

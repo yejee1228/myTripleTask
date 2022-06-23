@@ -19,12 +19,12 @@ const MetricsItem = ({id}) => {
 
     const [count, setCount] = useState(0);
     const end = statistic[0].value;
-    let stepTime = Math.abs(Math.floor(2000 / end)); 
+    let stepTime = Math.abs(Math.floor( (2000 - (2000 / end) * 2) / end)); 
 
     useEffect(() => {
         let timer=null
         if (count > end -10){
-            stepTime *= 4
+            stepTime *= 2
         }
 
         if (count < end) {

@@ -1,8 +1,8 @@
 const initialState = {
     statistics:[  
-        {id:'touristCount', value: 700, unit:'명', name:'여행자'},
-        {id:'reviewCount', value: 100, unit:'개', name:'여행 리뷰'},
-        {id:'planCount', value: 470, unit:'개', name:'여행 일정'},
+        {id:'touristCount', value: 350, unit:'명', name:'사용자'},
+        {id:'reviewCount', value: 21, unit:'개', name:'리뷰'},
+        {id:'planCount', value: 650, unit:'개', name:'저장'},
     ]
 }
 

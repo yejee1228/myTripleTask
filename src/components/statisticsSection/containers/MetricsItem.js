@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useSelector } from 'react-redux';
 import styled from 'styled-components';
 
@@ -19,27 +19,32 @@ const MetricsItem = ({id}) => {
 
     const [count, setCount] = useState(0)
     const end = statistic[0].value
-    let stepTime = Math.abs(Math.floor((2000 / end)))
-
+    let stepTime = useRef(Math.abs(Math.floor(2000 / end)))
+    let stepNum = 1
+    
     useEffect(() => {
         let timer=null
+        stepNum = end < 100 ? 1 : Math.abs(Math.floor(end / 100));
+        stepTime.current *= 1.01
+
         if (count > end * 0.9){
-            stepTime *= 4
+            stepNum = 1
         }
 
         if (count < end) {
             timer = setInterval(() => {
-                setCount(state => state + 1)
-            }, stepTime)
+                setCount(state => state + stepNum)
+            }, stepTime.current)
         } else {
             timer = setInterval(() => {
                 setCount(count)
             })
         }
+        
         return () => {
             clearInterval(timer)
         }
-    }, [count, stepTime])
+    }, [count, stepTime.current])
 
     return (
         <MetricsItemDiv>

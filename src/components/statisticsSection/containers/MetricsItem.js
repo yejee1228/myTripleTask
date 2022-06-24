@@ -17,14 +17,14 @@ const MetricsItem = ({id}) => {
     const statistics = useSelector( state => state.statistics.statistics )
     const statistic = statistics.filter(value=>value.id === id)
 
-    const [count, setCount] = useState(0);
-    const end = statistic[0].value;
-    let stepTime = Math.abs(Math.floor( (2000 - (2000 / end) * 2) / end)); 
+    const [count, setCount] = useState(0)
+    const end = statistic[0].value
+    let stepTime = Math.abs(Math.floor((2000 / end)))
 
     useEffect(() => {
         let timer=null
-        if (count > end -10){
-            stepTime *= 2
+        if (count > end * 0.9){
+            stepTime *= 4
         }
 
         if (count < end) {
@@ -39,7 +39,7 @@ const MetricsItem = ({id}) => {
         return () => {
             clearInterval(timer)
         }
-    }, [count])
+    }, [count, stepTime])
 
     return (
         <MetricsItemDiv>

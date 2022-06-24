@@ -4,28 +4,12 @@ import MetricsContainer from './containers/MetricsContainer';
 import AwardsContainer from './containers/AwardsContainer';
 
 const StaticsSection = () => {
-    const [enter, setEnter] = useState(0);
     
-    useEffect(() => {
-        let timer=null
-        if (enter < 3) {
-            timer = setInterval(() => {
-                setEnter(enter => enter + 1)
-            }, 100)
-        } else {
-            timer = setInterval(() => {
-                setEnter(enter)
-            })
-        }
-        return () => {
-            clearInterval(timer)
-        }
-    }, [enter])
     return (
         <>
-            {enter > 0 && <ContentLogo />}
-            {enter > 1 && <MetricsContainer />}
-            {enter > 2 && <AwardsContainer />}
+            <ContentLogo delay={0}/>
+            <MetricsContainer delay={100}/>
+            <AwardsContainer delay={200}/>
         </>
     );
 };

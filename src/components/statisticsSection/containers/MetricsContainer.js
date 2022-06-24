@@ -16,10 +16,10 @@ const MetricsContainerDiv = styled.div`
     }
     `
 
-const MetricsContainer = () => {
+const MetricsContainer = ({delay}) => {
     const [className, setClassName] = useState('fade-enter')
     useEffect(()=>{
-        setTimeout(()=>setClassName('fade-enter-active'), 200)
+        setTimeout(()=>setClassName('fade-enter-active'), delay)
     },[])
     return (
         <MetricsContainerDiv className={className}>

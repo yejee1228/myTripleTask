@@ -28,10 +28,10 @@ const AwardItemDiv = styled.div`
     line-height: 22px;
     margin-right: 39px;
 `
-const AwardsContainer = () => {
+const AwardsContainer = ({delay}) => {
     const [className, setClassName] = useState('fade-enter')
     useEffect(()=>{
-        setTimeout(()=>setClassName('fade-enter-active'), 200)
+        setTimeout(()=>setClassName('fade-enter-active'), delay)
     },[])
     return (
         <AwardsContainerDiv className={className}>

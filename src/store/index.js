@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux';  
-import statistics from './modules/statistics'
+import statistics from './modules/statistics';
 
 export default combineReducers({
     statistics

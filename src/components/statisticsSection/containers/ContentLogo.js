@@ -27,10 +27,10 @@ const ContentLogoDiv = styled.div`
 `
 
 const ContentLogo = () => {
-    const [className, setClassName] = useState('fade-enter');
+    const [className, setClassName] = useState('fade-enter')
     useEffect(()=>{
         setTimeout(()=>setClassName('fade-enter-active'), 200)
-    },[]);
+    },[])
     return (
         <ContentLogoDiv className={className}>
             2021년 12월 기준

@@ -17,10 +17,10 @@ const MetricsContainerDiv = styled.div`
     `
 
 const MetricsContainer = () => {
-    const [className, setClassName] = useState('fade-enter');
+    const [className, setClassName] = useState('fade-enter')
     useEffect(()=>{
         setTimeout(()=>setClassName('fade-enter-active'), 200)
-    },[]);
+    },[])
     return (
         <MetricsContainerDiv className={className}>
             <MetricsItem id={'touristCount'}/>

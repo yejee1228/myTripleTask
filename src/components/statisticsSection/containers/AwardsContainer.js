@@ -29,10 +29,10 @@ const AwardItemDiv = styled.div`
     margin-right: 39px;
 `
 const AwardsContainer = () => {
-    const [className, setClassName] = useState('fade-enter');
+    const [className, setClassName] = useState('fade-enter')
     useEffect(()=>{
         setTimeout(()=>setClassName('fade-enter-active'), 200)
-    },[]);
+    },[])
     return (
         <AwardsContainerDiv className={className}>
             <AwardItemDiv style={{backgroundImage:'url(/images/play-store2x.png)'}}>2018 구글 플레이스토어<br/>올해의 앱 최우수상 수상</AwardItemDiv>

@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../styled/section.module.css'
+import styles from '../styled/section.module.css';
 import ResponsiveSection from './common/ResponsiveSection';
 
 const SectionContainer = () => {
